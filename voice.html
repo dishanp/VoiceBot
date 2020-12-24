@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TextToVoice</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVT9kZVQWbeynn29bbYXr2XoxTF9xNl6CNBw&usqp=CAU" type="image/icon type">
+  
+    <style>
+      body{
+      width: 100%;
+      height: 100%;
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRonBlpxbWHUYfPaWFTbWoY52DMIXNGb7kewA&usqp=CAU');
+      background-size: 100% 100%;
+  }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <p class="navbar-text"><b>&copy;Text To Speech by Dishan Purkayastha</b></p>
+      </nav>
+      <br><br>
+      <div class="container">
+        <div class="jumbotron">
+            <h1><b>Text To <span style="color: brown;">Speech</span> Converter:<div id="show" style="color: brown; font-weight: bold;"></div></b></h1>
+            <br>
+            <span style="color: brown;font-weight: bold;font-size: x-large;">Select Voice: </span><select id='voiceList'></select> <br><br>
+            <span style="color: brown;font-weight: bold;font-size: x-large;">Enter Text:&nbsp </span><input id='txtInput' /> <br><br> 
+          
+          <a class="btn btn-success btn-lg" id="btnSpeak">Speak!</a>
+        </div>
+      </div>   
+
+    <script src="voice.js"></script>
+</body>
+</html>
